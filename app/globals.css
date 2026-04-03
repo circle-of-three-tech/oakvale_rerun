@@ -31,7 +31,10 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
-body { font-family: 'Cormorant Garamond', sans-serif; color: var(--charcoal); background: var(--warm-white); line-height: 1.6; }
+body { font-family: 'Cormorant Garamond', serif; color: var(--charcoal); background: var(--warm-white); line-height: 1.6; }
+
+/* Ensure all headings use Garamond */
+h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; }
 
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
