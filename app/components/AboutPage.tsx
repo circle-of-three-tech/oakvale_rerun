@@ -175,7 +175,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
                     borderRadius: "6px",
                   }}
                 />
-                <div className="advisor-photo-label">Photo Coming Soon</div>
+                {/* <div className="advisor-photo-label">Photo Coming Soon</div> */}
               </div>
               <div className="advisor-info">
                 <div className="advisor-name">{a.name}</div>
