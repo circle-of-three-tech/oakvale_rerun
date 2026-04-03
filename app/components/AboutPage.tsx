@@ -18,7 +18,7 @@ interface AboutPageProps {
 
 export default function AboutPage({ onNavigate }: AboutPageProps) {
   return (
-    <div>
+        <div className="mt-[2.5rem]">
       <div className="about-hero">
         <div className="about-hero-inner">
           <div className="section-label" style={{ color: "var(--mint)" }}>
@@ -41,6 +41,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
 
       <section style={{ background: "var(--cream)", padding: "6rem 8%" }}>
         <div
+          className="about-story"
           style={{
             display: "flex", 
             gap: "6rem",
@@ -84,7 +85,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               </p>
             </div>
           </div>
-          <div className="w-full bg-forest-mid/10 p-6 rounded-lg" style={{maxWidth: "400px", height: "400px", background: "url(/female_health_professional.png) no-repeat center/cover"}}>
+          <div className="about-story-image w-full bg-forest-mid/10 p-6 rounded-lg" style={{maxWidth: "400px", height: "400px", background: "url(/female_health_professional.png) no-repeat center/cover"}}>
 
           </div>
         </div>

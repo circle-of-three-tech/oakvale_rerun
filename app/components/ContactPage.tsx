@@ -10,9 +10,9 @@ interface ContactPageProps {
 }
 
 export default function ContactPage({ onNavigate }: ContactPageProps) {
-  return (
-    <div>
-      <div className="contact-hero">
+  return ( 
+    <div className="pt-[2.5rem]">
+      <div className="contact-hero pt-10">
         <h1>Work with Oakvale <em style={{ fontStyle: 'italic', color: 'var(--mint)' }}>Learning</em></h1>
         <p>We work with a small number of institutional partners at any one time. If your project aligns with our areas of expertise, we would like to hear from you.</p>
       </div>

@@ -100,7 +100,7 @@ const services = [
 
 export default function ServicesPage({ onNavigate }: ServicesPageProps) {
   return (
-    <div>
+    <div className="mt-[2.5rem]">
       <div className="services-hero">
         <div className="services-hero-inner">
           <div className="section-label" style={{ color: "var(--mint)" }}>

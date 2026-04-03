@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter, usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 type Page = 'home' | 'about' | 'services' | 'corporates' | 'academic' | 'donors' | 'government' | 'contact';
 
@@ -14,9 +15,13 @@ const clientPages: { label: string; page: Page }[] = [
 export default function Nav() {
   const router = useRouter();
   const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   
   const navigate = (page: Page) => {
     router.push(page === 'home' ? '/' : `/${page}`);
+    setMobileMenuOpen(false);
+    setDropdownOpen(false);
   };
   
   const isActive = (page: string) => {
@@ -32,11 +37,31 @@ export default function Nav() {
       <a className="nav-logo" onClick={() => navigate('home')} role="button" tabIndex={0}>
         <img src="/oakvale-white.svg" className="h-[2rem] w-auto" alt="Oakvale Learning Logo" />
       </a>
-      <ul className="nav-links">
+      
+      {/* Hamburger Menu Button - Mobile Only */}
+      <button 
+        className="nav-hamburger"
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        aria-label="Toggle navigation menu"
+        aria-expanded={mobileMenuOpen}
+      >
+        <span className="hamburger-box">
+          <span className={`hamburger-inner ${mobileMenuOpen ? 'active' : ''}`}></span>
+        </span>
+      </button>
+      
+      <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
         <li><a className={isActive('about') ? 'active' : ''} onClick={() => navigate('about')} role="button" tabIndex={0}>About</a></li>
         <li><a className={isActive('services') ? 'active' : ''} onClick={() => navigate('services')} role="button" tabIndex={0}>Services</a></li>
-        <li className="nav-dropdown">
-          <a className={isClientSectionActive() ? 'active' : ''} role="button" tabIndex={0}>Who We Work With</a>
+        <li className={`nav-dropdown ${dropdownOpen ? 'active' : ''}`}>
+          <a 
+            className={isClientSectionActive() ? 'active' : ''} 
+            role="button" 
+            tabIndex={0}
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
+            Who We Work With
+          </a>
           <div className="dropdown-menu">
             {clientPages.map((item) => (
               <a key={item.page} onClick={() => navigate(item.page)} role="button" tabIndex={0}>{item.label}</a>
