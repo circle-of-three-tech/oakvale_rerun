@@ -11,8 +11,17 @@ interface CorporatesPageProps {
 export default function CorporatesPage({ onNavigate }: CorporatesPageProps) {
   return (
     <div>
-      <div className="client-hero">
-        <div className="client-hero-inner">
+      <div className="client-hero relative w-full" style={{
+      backgroundImage: 'url(/corporates.png)',
+      backgroundAttachment: 'fixed',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'bottom center',
+      backgroundSize: 'cover',
+    }}>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-70 z-5" />
+      
+        <div className="client-hero-inner relative z-10">
           <div className="section-label" style={{ color: 'var(--mint)' }}>For Corporates</div>
           <h1>Building capability from <em>the inside out.</em></h1>
           <p>Fast-growing organisations across Africa face a common challenge: the workforce needed to deliver on strategic ambition often does not yet exist. We help you build it — from frontline skills to senior leadership.</p>

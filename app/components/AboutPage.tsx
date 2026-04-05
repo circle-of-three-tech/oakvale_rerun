@@ -19,8 +19,17 @@ interface AboutPageProps {
 export default function AboutPage({ onNavigate }: AboutPageProps) {
   return (
         <div className="mt-[2.5rem]">
-      <div className="about-hero">
-        <div className="about-hero-inner">
+      <div className="about-hero relative w-full" style={{
+      backgroundImage: 'url(/about-hero.png)',
+      backgroundAttachment: 'fixed',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+    }}>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-70 z-5" />
+      
+        <div className="about-hero-inner relative z-10">
           <div className="section-label" style={{ color: "var(--mint)" }}>
             About Oakvale Learning
           </div>

@@ -2,7 +2,7 @@
 
 import Footer from './Footer';
 import { Mail, MapPin, Globe } from 'lucide-react';
-
+  
 type Page = 'home' | 'about' | 'services' | 'corporates' | 'academic' | 'donors' | 'government' | 'contact';
 
 interface ContactPageProps {
@@ -12,9 +12,19 @@ interface ContactPageProps {
 export default function ContactPage({ onNavigate }: ContactPageProps) {
   return ( 
     <div className="pt-[2.5rem]">
-      <div className="contact-hero pt-10">
+      <div className="contact-hero pt-10 relative w-full" style={{
+      backgroundImage: 'url(/contact.png)',
+      backgroundAttachment: 'fixed',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover'
+    }}>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-70 z-5" /> 
+      <div className="contact-hero-inner relative z-10"> 
         <h1>Work with Oakvale <em style={{ fontStyle: 'italic', color: 'var(--mint)' }}>Learning</em></h1>
         <p>We work with a small number of institutional partners at any one time. If your project aligns with our areas of expertise, we would like to hear from you.</p>
+      </div>
       </div>
 
       <div className="contact-body">

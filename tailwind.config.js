@@ -29,8 +29,8 @@ module.exports = {
       fontFamily: {
         mark: "'Cormorant Garamond', serif",
         serif: "'Cormorant Garamond', serif",
-        body: "'Cormorant Garamond', serif",
-        lora: "'Lora', serif",
+        body: "'EB Garamond', serif",
+        lora: "'EB Garamond', serif"
       },
     }
   },

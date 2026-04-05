@@ -101,8 +101,17 @@ const services = [
 export default function ServicesPage({ onNavigate }: ServicesPageProps) {
   return (
     <div className="mt-[2.5rem]">
-      <div className="services-hero">
-        <div className="services-hero-inner">
+      <div className="services-hero relative w-full" style={{
+      backgroundImage: 'url(/services.png)',
+      backgroundAttachment: 'fixed',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'bottom center',
+      backgroundSize: 'cover',
+    }}>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-70 z-5" />
+      
+        <div className="services-hero-inner relative z-10">
           <div className="section-label" style={{ color: "var(--mint)" }}>
             What We Do
           </div>

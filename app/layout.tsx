@@ -1,6 +1,23 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, EB_Garamond } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav";
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
+
+const ebGaramond = EB_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-eb-garamond",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Oakvale Learning: Strengthening Health Systems Through Learning",
@@ -13,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${cormorantGaramond.variable} ${ebGaramond.variable}`}>
       <body>
         <Nav /> 
         {children} 

@@ -55,7 +55,7 @@ export default function Hero({ onNavigate }: HeroProps) {
       backgroundSize: 'cover',
     }}>
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-white bg-opacity-80 z-10" />
+      <div className="absolute inset-0 bg-black bg-opacity-60 z-10" />
       
       {/* Grid overlay pattern */}
       <div className="absolute inset-0 hero-grid-overlay z-20" />
@@ -66,7 +66,7 @@ export default function Hero({ onNavigate }: HeroProps) {
 
          <div className="hero-content relative z-20" style={{position: 'relative', zIndex: 20}}>
           <div className="hero-eyebrow">Workforce Solutions | Leadership & Organisational Development</div>
-          <h1>
+          <h1 className="text-white">
             Building the health systems Africa {" "}<br /> 
             <em><span ref={cycleRef}></span></em><br /> 
           </h1>

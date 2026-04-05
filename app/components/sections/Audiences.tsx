@@ -10,15 +10,15 @@ interface AudiencesProps {
 
 export default function Audiences({ onNavigate }: AudiencesProps) {
   return (
-    <section className="audiences relative w-full min-h-screen z-0 border-t-[5px] border-gold" style={{
-      backgroundImage: 'url(/female_health_professional.png)',
+    <section className="audiences relative bg-forest w-full min-h-screen z-0" style={{
+      // backgroundImage: 'url(/female_health_professional.png)',
       backgroundAttachment: 'fixed',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'top',
       backgroundSize: 'cover',
     }}>
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-forest/95 z-10" />
+      {/* <div className="absolute inset-0 bg-black/65 z-10" /> */}
       
       <div className="audiences-header relative z-30">
         <div>

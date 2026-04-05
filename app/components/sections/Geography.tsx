@@ -60,43 +60,7 @@ export default function Geography() {
           </div>
         </div>
         <div>
-          <div
-            className="focus-box geography relative w-full min-h-[400px] mt-12"
-            style={{
-              backgroundImage: "url(/map.png)", 
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
-            {/* Dark overlay */}
-            {/* <div className="absolute inset-0 bg-forest bg-opacity-80 z-15" /> */}
-            {/* <h3>Our African Focus</h3>
-            <p>
-              We are not a global consultancy with an Africa practice. Africa is
-              our focus, our expertise and our commitment. Every programme we
-              design is built for the specific workforce, institutional and
-              infrastructure realities of the contexts in which we work.
-            </p>
-            <div className="focus-stats">
-              <div className="focus-stat">
-                <div className="num">12+</div>
-                <div className="lbl">Countries Active</div>
-              </div>
-              <div className="focus-stat">
-                <div className="num">50k+</div>
-                <div className="lbl">Learners Reached</div>
-              </div>
-              <div className="focus-stat">
-                <div className="num">15+</div>
-                <div className="lbl">Years Experience</div>
-              </div>
-              <div className="focus-stat">
-                <div className="num">4</div>
-                <div className="lbl">Regional Hubs</div>
-              </div>
-            </div> */}
-          </div>
+        
         </div>
       </div>
     </section>
