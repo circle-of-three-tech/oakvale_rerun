@@ -33,7 +33,7 @@ export default function ContactPage({ onNavigate }: ContactPageProps) {
           <p>We are best placed to support organisations working on workforce, leadership and organisational development across Africa, particularly where there is intent to build something that lasts rather than deliver a one-off training event. We welcome enquiries at any stage, including early-stage programme scoping and proposal development.</p>
           <div className="contact-detail">
             <div className="contact-detail-icon"><Mail size={20} /></div>
-            <div className="contact-detail-text"><small>General Enquiries</small><a href="mailto:hello@oakvalelearning.com">hello@oakvalelearning.com</a></div>
+            <div className="contact-detail-text"><small>General Enquiries</small><a href="mailto:hello@oakvaleltd.com">hello@oakvaleltd.com</a></div>
           </div>
           <div className="contact-detail">
             <div className="contact-detail-icon"><MapPin size={20} /></div>
@@ -43,22 +43,7 @@ export default function ContactPage({ onNavigate }: ContactPageProps) {
             <div className="contact-detail-icon"><Globe size={20} /></div>
             <div className="contact-detail-text"><small>Programme Delivery</small>Africa and the Global South</div>
           </div>
-          <div style={{ marginTop: '3rem', padding: '2rem', background: 'var(--cream)', borderRadius: '8px', border: '1px solid var(--border)' }}>
-            <div className="section-label" style={{ marginBottom: '0.8rem' }}>We are particularly interested in</div>
-            <ul style={{ listStyle: 'none' }}>
-              {[
-                'Workforce development programmes with youth or female empowerment components',
-                'University curriculum co-development in management, leadership and professional disciplines',
-                'Leadership and organisational development for corporates and public sector organisations',
-                'Proposal partnerships with NGOs, development foundations and implementing partners',
-              ].map((item, i) => (
-                <li key={i} style={{ padding: '0.6rem 0', borderBottom: i < 3 ? '1px solid var(--border)' : 'none', fontSize: '0.88rem', color: 'var(--charcoal)', display: 'flex', gap: '0.7rem', alignItems: 'start' }}>
-                  <span style={{ color: 'var(--sage)', fontWeight: 700 }}>→</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+          
         </div>
 
         <div className="contact-form">

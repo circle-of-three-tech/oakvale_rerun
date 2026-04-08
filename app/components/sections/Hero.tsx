@@ -66,7 +66,8 @@ export default function Hero({ onNavigate }: HeroProps) {
          <div className="hero-content relative z-20" style={{position: 'relative', zIndex: 20}}>
           <div className="hero-eyebrow">Workforce Solutions | Leadership & Organisational Development</div>
           <h1 className="text-white">
-            Building the health systems Africa {" "}<br /> 
+            Building <br/>the health systems {" "}<br /> 
+            Africa <br/>
             <em><span ref={cycleRef}></span></em><br /> 
           </h1>
           <p className="hero-sub">

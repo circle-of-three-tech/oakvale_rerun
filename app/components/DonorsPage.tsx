@@ -11,7 +11,7 @@ interface DonorsPageProps {
 export default function DonorsPage({ onNavigate }: DonorsPageProps) {
   return (
     <div>
-      <div className="client-hero relative w-full" style={{
+      <div className="client-hero relative w-full min-h-[40vh] flex items-end" style={{
       backgroundImage: 'url(/donors.png)',
 
       backgroundRepeat: 'no-repeat',
@@ -23,7 +23,7 @@ export default function DonorsPage({ onNavigate }: DonorsPageProps) {
       
         <div className="client-hero-inner relative z-10">
           <div className="section-label" style={{ color: 'var(--mint)' }}>For Donor Agencies & Implementing Partners</div>
-          <h1>Workforce development that <em>delivers results and proves them.</em></h1>
+          <h1>Workforce development that <em>delivers results.</em></h1>
           <p>Grant-funded workforce programmes face a dual obligation: deliver real impact for beneficiaries, and demonstrate that impact convincingly to funders. We design programmes that do both.</p>
         </div>
       </div>
@@ -38,8 +38,9 @@ export default function DonorsPage({ onNavigate }: DonorsPageProps) {
       <div className="client-intro">
         <div className="client-intro-grid">
           <div>
-            <h2>Learning that justifies <em>continued investment.</em></h2>
-            <p>Development programmes are under increasing pressure to demonstrate impact — not just outputs. Completion rates and attendance numbers are no longer sufficient. Funders want to see real behaviour change, employment outcomes, and sustainable improvement after the programme ends.</p>
+            <h2>Learning that justifies <br/><em>continued investment.</em></h2>
+            <p>Development programmes are under increasing pressure to demonstrate impact, not just outputs. Completion rates and attendance numbers are no longer sufficient. </p>
+            <p>Funders want to see real behaviour change, employment outcomes, and sustainable improvement after the programme ends.</p>
             <p>We design workforce development programmes that are built around measurable outcomes from day one. Our M&E frameworks are integrated into the learning design, not bolted on at the end.</p>
           </div>
           <div>
@@ -49,7 +50,7 @@ export default function DonorsPage({ onNavigate }: DonorsPageProps) {
                 {[
                   'We need to show impact, not just delivery',
                   'Our training is not changing behaviour the way we hoped',
-                  'The beneficiaries we work with have complex starting points — generic training does not work',
+                  'The beneficiaries we work with have complex starting points and generic training does not work',
                   'We need a learning partner who understands the realities of grant-funded delivery',
                   'We want to integrate M&E into the learning design, not treat it as an afterthought',
                 ].map((c, i) => <li key={i}>{c}</li>)}

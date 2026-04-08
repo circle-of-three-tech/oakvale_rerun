@@ -10,7 +10,7 @@ interface CorporatesPageProps {
 
 export default function CorporatesPage({ onNavigate }: CorporatesPageProps) {
   return (
-    <div>
+    <div className="py-[2rem] min-h-[30vh]">
       <div className="client-hero relative w-full" style={{
       backgroundImage: 'url(/corporates.png)',
 
@@ -24,7 +24,7 @@ export default function CorporatesPage({ onNavigate }: CorporatesPageProps) {
         <div className="client-hero-inner relative z-10">
           <div className="section-label" style={{ color: 'var(--mint)' }}>For Corporates</div>
           <h1>Building capability from <em>the inside out.</em></h1>
-          <p>Fast-growing organisations across Africa face a common challenge: the workforce needed to deliver on strategic ambition often does not yet exist. We help you build it — from frontline skills to senior leadership.</p>
+          <p>Fast-growing organisations across Africa face a common challenge: the workforce needed to deliver on strategic ambition often does not yet exist. <br/>We help you build it from frontline skills to senior leadership.</p>
         </div>
       </div>
 
@@ -38,9 +38,10 @@ export default function CorporatesPage({ onNavigate }: CorporatesPageProps) {
       <div className="client-intro">
         <div className="client-intro-grid">
           <div>
-            <h2>The capability gap is <em>your competitive risk.</em></h2>
-            <p>Across Africa&apos;s fastest-growing sectors, the organisations that will outperform are those that invest in building internal capability now. Not through one-off training days, but through structured, sustained programmes that change how people work.</p>
-            <p>We partner with corporates at every stage of growth — from the high-growth startup building its first management layer to the established business redesigning its leadership pipeline for the next decade.</p>
+            <h2>The capability gap is <br/><em>your competitive risk.</em></h2>
+            <p>Across Africa&apos;s fastest-growing sectors, the organisations that will outperform are those that invest in building internal capability now. </p> 
+            <p>Not through one-off training days, but through structured, sustained programmes that change how people work.</p>
+            <p>We partner with corporates at every stage of growth - from the high-growth startup building its first management layer to the established business redesigning its leadership pipeline for the next decade.</p>
           </div>
           <div>
             <div className="challenges-box">
@@ -50,7 +51,7 @@ export default function CorporatesPage({ onNavigate }: CorporatesPageProps) {
                   'We promote technically strong people into management and they struggle with the transition',
                   'Our training spend does not seem to change anything',
                   'We need to develop African leaders from within, not always hire from outside',
-                  'Our onboarding is not working — people are not performing quickly enough',
+                  'Our onboarding is not working. People are not performing quickly enough',
                   'We want to build a real learning culture, not just a training calendar',
                 ].map((c, i) => <li key={i}>{c}</li>)}
               </ul>

@@ -11,7 +11,7 @@ interface GovernmentPageProps {
 export default function GovernmentPage({ onNavigate }: GovernmentPageProps) {
   return (
     <div>
-      <div className="client-hero relative w-full" style={{
+      <div className="client-hero relative min-h-[40vh] flex items-end" style={{
       backgroundImage: 'url(/government.png)',
 
       backgroundRepeat: 'no-repeat',
@@ -23,7 +23,7 @@ export default function GovernmentPage({ onNavigate }: GovernmentPageProps) {
       
         <div className="client-hero-inner relative z-10">
           <div className="section-label" style={{ color: 'var(--mint)' }}>For Government Agencies & Departments</div>
-          <h1 className="font-[500]">National capability. <em>Built to scale. Designed to endure.</em></h1>
+          <h1 className="font-[500]">National capability.  <em>Competence at scale.</em></h1>
           <p>Government workforces are the backbone of national development. We partner with ministries and public agencies to build the workforce capability that public service delivery depends on.</p>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function GovernmentPage({ onNavigate }: GovernmentPageProps) {
       <div className="client-intro">
         <div className="client-intro-grid">
           <div>
-            <h2>Building the workforce that <em>national development requires.</em></h2>
+            <h2>Building the workforce that <br/><em>national development requires.</em></h2>
             <p>Public sector workforce development operates at a different scale and with different constraints from the private sector. Workforces are dispersed, infrastructure is variable, accountability is public and the stakes are high. We understand this environment and we design for it.</p>
             <p>We work with government ministries and agencies across Africa on everything from health workforce development to national skills programmes, civil service capability and technology-enabled national training delivery.</p>
           </div>
@@ -48,7 +48,7 @@ export default function GovernmentPage({ onNavigate }: GovernmentPageProps) {
               <ul>
                 {[
                   'We need to train thousands of civil servants and the logistics are overwhelming',
-                  'Training happens but nothing changes — the transfer problem is real',
+                  'Training happens but nothing changes and the transfer problem is real',
                   'We want to build internal L&D capability, not rely on consultants forever',
                   'Our workforce is dispersed and face-to-face training is not enough',
                   'We need to demonstrate the impact of our training investment to treasury',

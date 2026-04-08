@@ -6,7 +6,7 @@ export default function Why() {
       <div className="why-grid">
         <div>
           <div className="section-label">Why Oakvale Learning</div>
-          <h2 className="section-title">Forged in health and<br />social care. <em>Applied everywhere.</em></h2>
+          <h2 className="section-title">Forged in health and<br />social care. <br/> <em>Applied everywhere.</em></h2>
           <div className="differentiators">
             {[
               { title: 'Evidence-based methodology', body: 'Every programme we design is grounded in learning science and tested against real-world outcomes, not just completion rates.' },
